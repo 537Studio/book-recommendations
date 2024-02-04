@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>《解忧杂货店》的评论</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/sign_up.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/forum.css" />
+    <script src="js/dayjs.min.js"></script>
+    <script src="js/jquery-3.7.1.slim.min.js"></script>
+  </head>
+  <body>
+    <header class=".clean">
+      <ul class="left">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">推荐</a></li>
+        <li><a href="#">热门</a></li>
+        <li><a href="forum.html">评论</a></li>
+      </ul>
+      <ul class="right" id="accDiv">
+        <li><a href="javascript:;" onclick="sign_in()">登录</a></li>
+        <li><a href="javascript:;" onclick="sign_up()">注册</a></li>
+      </ul>
+    </header>
+    <div class="top">
+      <div class="main">
+        <h1 class="title">年度最佳书籍提名</h1>
+        <p class="se">最一家之言奖</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="banner clean">
+        <div class="left clean">
+          <h2 class="title">解忧杂货店</h2>
+          <p>作者: <span>[日] 东野圭吾</span></p>
+          <p>出版社: <span>南海出版公司</span></p>
+          <p>出版年: <span>2014-5</span></p>
+          <p>丛书: <span>新经典文库·东野圭吾作品</span></p>
+          <p>ISBN: <span>9787544270878</span></p>
+          <div id="excerpts">
+            <div id="excerpts_main">
+              <h3 class="title">原文摘录</h3>
+              <p class="text">
+                如果说，来找我咨询烦恼的人是迷途的羔羊，通常他们手上都有地图，却没有看地图，或是不知道自己目前的位置。
+                但我相信你不属于任何一种情况，你画的地图是一张白纸，所以，即使想决定目的地，也不知道路在哪里。
+                地图是白纸当然很伤脑筋，任何人都会不知所措。
+              </p>
+              <p class="text">
+                但是不妨换一个角度思考，正因为是白纸，所以可以画任何地图，一切都掌握在你自己手上。你很自由，充满了无限可能。这是很棒的事，我衷心祈祷你可以相信自己，无悔地燃烧自己
+              </p>
+              <p class="footer">引自 在天上祈祷</p>
+            </div>
+            <div id="borderanimBef"></div>
+            <div id="borderanimAft"></div>
+          </div>
+        </div>
+        <div id="banner_right">
+          <img src="img/book.jpg" alt="解忧杂货店" id="cover" />
+          <p class="zs">解忧杂货店</p>
+        </div>
+        <script src="js/borderAnim.js"></script>
+      </div>
+      <div class="commnetDiv comment">
+        <h3 class="title">评论区</h3>
+        <div class="com_top commnetDiv_top">
+          <textarea
+            name=""
+            id=""
+            cols="60"
+            rows="10"
+            class="textarea"
+            maxlength="200"
+            readonly="readonly"
+            placeholder="留下你的看法"></textarea>
+          <div class="text_count"><span id="text_count_now">0</span>/200</div>
+          <button>发表</button>
+          <div class="not_dl">
+            还没登录呢！<span onclick="sign_in()">点我登录</span>
+          </div>
+          <div class="radioDiv">
+            <span>喜欢小编推荐的《解忧杂货店》吗</span>
+
+            <input
+              type="radio"
+              id="like"
+              name="evaluation"
+              value="喜欢"
+              checked />
+            <label for="like">喜欢</label>
+
+            <input type="radio" id="generally" name="evaluation" value="一般" />
+            <label for="generally">一般</label>
+
+            <input
+              type="radio"
+              id="not_like"
+              name="evaluation"
+              value="不喜欢" />
+            <label for="not_like">不喜欢</label>
+          </div>
+        </div>
+        <div class="com_box">
+          <h3>全部评论<span id="illustrate">(<i>说明...</i>)</span></h3>
+          <div class="illustrateDiv">
+            <p>
+              本页面采用localStorage技术保存记录，当您更换浏览器时，记录将会清除
+            </p>
+            <p>当您首次加载页面时，页面会自动载入初始评论，这是正常现象</p>
+            <p>若您希望删除这些评论，可以登录root账户管理页面</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/init.js"></script>
+    <script src="js/complete_com_AND_more.js"></script>
+    <footer>
+      <p>个人练手项目，非商业用途，代码均已公布，素材来自于网络，侵权联删</p>
+      <p>网页风格、文本多参考自豆瓣网</p>
+      <p>2024-02-03@Pi</p>
+    </footer>
+
+    <div id="mask">
+      <div class="up">
+        <p class="title">账号注册</p>
+        <form action="forum.html" method="post" onsubmit="return check_zc()">
+          <div id="close2"></div>
+          <label for="userName">用户名：</label>
+          <input type="text" id="userName" placeholder="请输入用户名" />
+          <label for="userPwd">密码：</label>
+          <input
+            type="password"
+            id="userPwd"
+            placeholder="请输入一个简单的密码" />
+          <p class="zs">本网站为本地存储，有安全风险，切勿输入常用密码</p>
+          <input type="submit" name="zcbtn" id="zcbtn" value="注册" />
+          <p class="alreadly">
+            已有账户? <span id="al_btn" onclick="close_and_sign(1)">登录</span>
+          </p>
+        </form>
+      </div>
+      <div class="in">
+        <p class="title">账号登录</p>
+        <form action="forum.html" method="post" onsubmit="return check_dl()">
+          <div id="close1"></div>
+          <label for="name">用户名：</label>
+          <input type="text" id="name" placeholder="请输入用户名" />
+          <label for="pwd">密码：</label>
+          <input type="password" id="pwd" placeholder="请输入密码" />
+          <input type="submit" name="dlbtn" id="dlbtn" value="登录" />
+          <p class="not">
+            还没有账户?
+            <span id="not_btn" onclick="close_and_sign(0)">注册</span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="js/sign_up.js"></script>
+  </body>
+</html>

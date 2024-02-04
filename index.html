@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一本好书</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/sign_up.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/dayjs.min.js"></script>
+    <script src="js/jquery-3.7.1.slim.min.js"></script>
+  </head>
+  <body>
+    <header class=".clean">
+      <ul class="left">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">推荐</a></li>
+        <li><a href="#">热门</a></li>
+        <li><a href="forum.html">评论</a></li>
+      </ul>
+      <ul class="right" id="accDiv">
+        <li><a href="javascript:;" onclick="sign_in()">登录</a></li>
+        <li><a href="javascript:;" onclick="sign_up()">注册</a></li>
+      </ul>
+    </header>
+    <div class="top">
+      <div class="main">
+        <h1 class="title">年度最佳书籍提名</h1>
+        <p class="se">最一家之言奖</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="banner clean">
+        <div class="left clean">
+          <h2 class="title">解忧杂货店</h2>
+          <p>作者: <span>[日] 东野圭吾</span></p>
+          <p>出版社: <span>南海出版公司</span></p>
+          <p>出版年: <span>2014-5</span></p>
+          <p>丛书: <span>新经典文库·东野圭吾作品</span></p>
+          <p>ISBN: <span>9787544270878</span></p>
+          <div id="excerpts">
+            <div id="excerpts_main">
+              <h3 class="title">原文摘录</h3>
+              <p class="text">
+                如果说，来找我咨询烦恼的人是迷途的羔羊，通常他们手上都有地图，却没有看地图，或是不知道自己目前的位置。
+                但我相信你不属于任何一种情况，你画的地图是一张白纸，所以，即使想决定目的地，也不知道路在哪里。
+                地图是白纸当然很伤脑筋，任何人都会不知所措。
+              </p>
+              <p class="text">
+                但是不妨换一个角度思考，正因为是白纸，所以可以画任何地图，一切都掌握在你自己手上。你很自由，充满了无限可能。这是很棒的事，我衷心祈祷你可以相信自己，无悔地燃烧自己
+              </p>
+              <p class="footer">引自 在天上祈祷</p>
+            </div>
+            <div id="borderanimBef"></div>
+            <div id="borderanimAft"></div>
+          </div>
+        </div>
+        <div id="banner_right">
+          <img src="img/book.jpg" alt="解忧杂货店" id="cover" />
+          <p class="zs">解忧杂货店</p>
+        </div>
+        <script src="js/borderAnim.js"></script>
+      </div>
+      <div class="introduction">
+        <h3 class="title">内容简介</h3>
+        <div class="main">
+          <p class="text">现代人内心流失的东西，这家杂货店能帮你找回——</p>
+          <p class="text">
+            僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。
+          </p>
+          <p class="text">
+            因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊；克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……
+          </p>
+
+          <p class="text">
+            他们将困惑写成信投进杂货店，随即奇妙的事情竟不断发生。
+          </p>
+          <p class="text">生命中的一次偶然交会，将如何演绎出截然不同的人生？</p>
+          <p class="text">
+            如今回顾写作过程，我发现自己始终在思考一个问题：站在人生的岔路口，人究竟应该怎么做？我希望读者能在掩卷时喃喃自语：我从未读过这样的小说。——东野圭吾
+          </p>
+        </div>
+      </div>
+      <div class="author_info">
+        <h3 class="title">作者简介</h3>
+        <div class="main">
+          <p class="text">东野圭吾</p>
+          <p class="text">日本著名作家。</p>
+          <p class="text">
+            1985年，《放学后》获第31届江户川乱步奖，开始专职写作；
+          </p>
+          <p class="text">1999年，《秘密》获第52届日本推理作家协会奖；</p>
+          <p class="text">
+            2005年出版的《嫌疑人X的献身》史无前例地同时获得第134届直木奖、第6届本格推理小说大奖，以及年度三大推理小说排行榜第1名；
+          </p>
+          <p class="text">2008年，《流星之绊》获第43届新风奖；</p>
+          <p class="text">
+            2009年出版的《新参者》获两大推理小说排行榜年度第1名；
+          </p>
+          <p class="text">2012年，《解忧杂货店》获第7届中央公论文艺奖。</p>
+          <p class="text">
+            2014年，《祈りの幕が下りる時》（暂译《祈祷落幕时》）获第48届吉川英治文学奖。
+          </p>
+        </div>
+        <img src="img/author1.png" alt="东野圭吾" class="photo" />
+      </div>
+      <div class="more_book">
+        <h3 class="title">下笔成章</h3>
+        <p class="subtitle">
+          东野圭吾自成为专职作家起，几乎每一年都有作品问世。无人出身一帆风顺，一路上的许多作品作为了见证的里程碑。
+        </p>
+        <div class="main">
+          <div class="item_left clean">
+            <img src="img/book1.jpg" alt="白夜行" class="left_img" />
+            <h4 class="book_title">放学后</h4>
+            <p class="book_subtitle">
+              1985年，凭《放学后》获第31届江户川乱步奖，开始专职写作
+            </p>
+            <p class="bold">东野圭吾成名作</p>
+            <p class="bold">荣获第31届江户川乱步奖</p>
+            <p class="text">草长莺飞的青春，忽如琉璃般生生粉碎。</p>
+            <p class="text">
+              当美丽、纯粹、真实的事物被破坏，重视的回忆和梦想被摧毁时，恨意便开始萌发，恣意蔓延开来……
+            </p>
+            <p class="text">在这所清华女中，有人喜欢我，有人恨我。</p>
+            <p class="text">
+              星期一放学后，我游完泳进入淋浴间冲洗，差点中机关触电身亡；
+            </p>
+            <p class="text">
+              星期二放学后，一盆天竺葵从教学楼三层坠落，直直砸向我头顶；
+            </p>
+            <p class="text">
+              星期四放学后，一位老师被毒死在我常用的更衣室，他是替我而死？
+            </p>
+            <p class="text">悚然之间才明白，我似已无路可逃……</p>
+          </div>
+          <div class="item_right clean">
+            <img src="img/book2.jpg" alt="白夜行" class="right_img" />
+            <h4 class="book_title">白夜行</h4>
+            <p class="book_subtitle">
+              出版之后引起巨大轰动，使东野圭吾成为天王级作家
+            </p>
+            <p class="bold">
+              小说被改编成同名电视连续剧，与图书一同为作家带来了如潮好评
+            </p>
+            <p class="bold">使他成为日本、韩国与台湾等地最受欢迎的作家之一</p>
+            <p class="bold">入围第122届直木奖</p>
+            <p class="text">
+              “只希望能手牵手在太阳下散步”，这个象征故事内核的绝望念想，有如一个美丽的幌子，随着无数凌乱、压抑、悲凉的故事片段像纪录片一样一一还原：没有痴痴相思，没有海枯石烂，只剩下一个冰冷绝望的诡计，最后一丝温情也被完全抛弃，万千读者在一曲救赎罪恶的凄苦爱情中悲切动容……
+            </p>
+          </div>
+          <div class="item_left clean">
+            <img src="img/book3.jpg" alt="嫌疑人X的献身" class="left_img" />
+            <h4 class="book_title">嫌疑人X的献身</h4>
+            <p class="book_subtitle">
+              2006年，《嫌疑人X的献身》终于捧得日本文学最高荣誉直木奖
+            </p>
+            <p class="bold">
+              获得直木奖和本格推理小说大奖，更受到评论界、媒体和广大读者的如潮好评
+            </p>
+            <p class="bold" style="margin-bottom: 10px">
+              创造了日本推理小说史上绝无仅有的奇迹——同时摘得“这本小说了不起”、“本格推理小说Top
+              10”、“周刊文艺推理小说Top 10”三大推理小说排行榜年度总冠军。
+            </p>
+            <p class="text">
+              百年一遇的数学天才石神，每天唯一的乐趣，便是去固定的便当店买午餐，只为看一眼在便当店做事的邻居靖子。
+            </p>
+            <p class="text">
+              靖子与女儿相依为命，失手杀了前来纠缠的前夫。石神提出由他料理善后。石神设了一个匪夷所思的局，令警方始终只能在外围敲敲打打，根本无法与案子沾边。石神究竟使用了什么手法？
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="reason">
+        <h3 class="title">推荐原因</h3>
+        <div class="main clean" id="reasonDiv">
+          <p class="text">
+            《解忧杂货店》是一本充满深度与智慧的小说，它将带你走进人性的深处，探索内心的疑虑与困扰。作者以其独特的笔触，将现实与奇幻巧妙地融合在一起，使得这本书既具有强烈的现实意义，又带有奇幻的色彩。
+            <span id="more_reason">(<i>展开...</i>)</span>
+          </p>
+          <p class="text">
+            在本书中，作者巧妙地通过解忧杂货店这一设定，引出了许多人生中常见的困惑与难题。每个来咨询的人心中其实已经有了答案，他们只是希望得到肯定和鼓励。这使得我们在阅读时不断思考：什么是真正的选择？是盲目追求他人的意见，还是坚定自己的内心？
+          </p>
+          <img src="img/child.png" alt="" class="tmpp" />
+          <p class="text">
+            书中的情节设置也很巧妙，让人心生感慨。两个恋人的爱，划时空感染了许多的人，也改变了很多人的命运。读者阅读中可以真切感受到日本几十年的时代变迁，日本经济的飞速发展和失去的十年。小说底调是忧伤的，迷茫的少年，成长的伤痛，苍凉的人生。每一个人和每一段故事都因为杂货店串联起来。解忧杂货店像路灯一样照亮了这些人的人生十字路口。
+          </p>
+          <p class="text">
+            同时，也鼓励我们面对生活中的困难和挑战。正如书中所说：“虽然至今为止的道路绝非一片坦途，但想到正因为活着才有机会感受到痛楚，我就成功克服了种种困难。”
+            这句话给予了我们力量和勇气，让我们明白只有勇敢面对，才能真正成长。
+          </p>
+          <p class="text">
+            这本小说不仅提供了一个引人入胜的故事线，还通过深入探讨人生中的选择、情感与困难，给予了我们许多宝贵的启示。无论你是正在面临人生抉择，还是渴望深入了解人与人之间的关系，它都会为你带来不少收获。
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="com_top">
+          <textarea
+            name=""
+            id=""
+            cols="60"
+            rows="10"
+            class="textarea"
+            maxlength="200"
+            readonly="readonly"
+            placeholder="留下你的看法"></textarea>
+          <div class="text_count"><span id="text_count_now">0</span>/200</div>
+          <button>发表</button>
+          <div class="not_dl">
+            还没登录呢！<span onclick="sign_in()">点我登录</span>
+          </div>
+          <div class="radioDiv">
+            <span>喜欢小编推荐的《解忧杂货店》吗</span>
+
+            <input
+              type="radio"
+              id="like"
+              name="evaluation"
+              value="喜欢"
+              checked />
+            <label for="like">喜欢</label>
+
+            <input type="radio" id="generally" name="evaluation" value="一般" />
+            <label for="generally">一般</label>
+
+            <input
+              type="radio"
+              id="not_like"
+              name="evaluation"
+              value="不喜欢" />
+            <label for="not_like">不喜欢</label>
+          </div>
+        </div>
+        <div class="com_box">
+          <h3>最新评论<span id="illustrate">(<i>说明...</i>)</span></h3>
+          <div class="illustrateDiv">
+            <p>
+              本页面采用localStorage技术保存记录，当您更换浏览器时，记录将会清除
+            </p>
+            <p>当您首次加载页面时，页面会自动载入初始评论，这是正常现象</p>
+            <p>若您希望删除这些评论，可以登录root账户管理页面</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/init.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/more.js"></script>
+
+    <footer>
+      <p>个人练手项目，非商业用途，代码均已公布，素材来自于网络，侵权联删</p>
+      <p>网页风格、文本多参考自豆瓣网</p>
+      <p>2024-02-03@Pi</p>
+    </footer>
+
+    <div id="mask">
+      <div class="up">
+        <p class="title">账号注册</p>
+        <form action="index.html" method="post" onsubmit="return cheak_zc()">
+          <div id="close2"></div>
+          <label for="userName">用户名：</label>
+          <input type="text" id="userName" placeholder="请输入用户名" />
+          <label for="userPwd">密码：</label>
+          <input
+            type="password"
+            id="userPwd"
+            placeholder="请输入一个简单的密码" />
+          <p class="zs">本网站为本地存储，有安全风险，切勿输入常用密码</p>
+          <input type="submit" name="zcbtn" id="zcbtn" value="注册" />
+          <p class="alreadly">
+            已有账户? <span id="al_btn" onclick="close_and_sign(1)">登录</span>
+          </p>
+        </form>
+      </div>
+      <div class="in">
+        <p class="title">账号登录</p>
+        <form action="index.html" method="post" onsubmit="return cheak_dl()">
+          <div id="close1"></div>
+          <label for="name">用户名：</label>
+          <input type="text" id="name" placeholder="请输入用户名" />
+          <label for="pwd">密码：</label>
+          <input type="password" id="pwd" placeholder="请输入密码" />
+          <input type="submit" name="dlbtn" id="dlbtn" value="登录" />
+          <p class="not">
+            还没有账户?
+            <span id="not_btn" onclick="close_and_sign(0)">注册</span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="js/sign_up.js"></script>
+  </body>
+</html>
