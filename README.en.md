@@ -1,25 +1,26 @@
 # Pi练手项目-一本好书：书籍推荐详情页
 
 #### Description
-Pi练手项目-一本好书：基于原生三件套的书籍推荐详情页（静态页面），出于练习的目的引入了jQuery库，以及为了兼容各浏览器格式引入了day.js库
-特点：
-1.以js控制状态，插入css动画改善观感
-2.使用localStorage模拟后台储存，让静态页面产生交互性
 
-#### Software Architecture
-Software architecture description
+Written at the beginning: my English is not good, the following content is machine translation
 
-#### Installation
+Pi Practice Project - A Good Book: A book recommendation detail page (static page) based on the native three piece set, introduced the jQuery library for practice purposes, and introduced the day.js library for compatibility with various browser formats
+Features:
+1. Control the state with JavaScript and insert CSS animations to improve the appearance
+2. Use LocalStorage to simulate backend storage and create interactivity on static pages
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### illustration
 
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+A practice project for a recent student who is trying to write this type of page for the first time may not have been well thought out. Feel free to point out any issues; Beginners who are interested in learning can also look at the code and communicate with each other
+Master, please do not mock, just half a year of studying
+Beginners can refer to:
+1. Try to learn how to use libraries to improve writing efficiency and unify formats in different environments
+2. Use and inspection of pure front-end forms
+3. Static page simulation window pop-up and local storage
+4. Understand and flexibly apply CSS animation and transition to optimize appearance, and have a preliminary understanding of webpage animation effects
+5. Understand code reuse, consider code robustness, capture possible runtime errors, and optimize DOM programming
+6. Textarea adaptive height
+7. Compare the differences in writing styles and choose the best to improve the code style
 
 #### Contribution
 
@@ -28,12 +29,3 @@ Software architecture description
 3.  Commit your code
 4.  Create Pull Request
 
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
