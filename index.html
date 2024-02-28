@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/sign_up.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/elevaterNav.css" />
     <script src="js/dayjs.min.js"></script>
     <script src="js/jquery-3.7.1.slim.min.js"></script>
   </head>
@@ -29,6 +30,7 @@
         <p class="se">最一家之言奖</p>
       </div>
     </div>
+    <!-- 内含电梯导航 -->
     <div class="container">
       <div class="banner clean">
         <div class="left clean">
@@ -243,11 +245,26 @@
           </div>
         </div>
       </div>
+      <!-- 电梯导航 -->
+      <div class="elevaterNav">
+        <ul>
+          <li>
+            <div class="angle"></div>
+            <i>返回顶部</i>
+          </li>
+          <li><i>内容简介</i></li>
+          <li><i>作者简介</i></li>
+          <li><i>下笔成章</i></li>
+          <li><i>推荐原因</i></li>
+          <li><i>最新评论</i></li>
+        </ul>
+      </div>
     </div>
 
     <script src="js/init.js"></script>
     <script src="js/comment.js"></script>
     <script src="js/more.js"></script>
+    <script src="js/elevaterNav.js"></script>
 
     <footer>
       <p>个人练手项目，非商业用途，代码均已公布，素材来自于网络，侵权联删</p>
@@ -258,7 +275,7 @@
     <div id="mask">
       <div class="up">
         <p class="title">账号注册</p>
-        <form action="index.html" method="post" onsubmit="return cheak_zc()">
+        <form action="index.html" method="post" onsubmit="return check_zc()">
           <div id="close2"></div>
           <label for="userName">用户名：</label>
           <input type="text" id="userName" placeholder="请输入用户名" />
@@ -276,7 +293,7 @@
       </div>
       <div class="in">
         <p class="title">账号登录</p>
-        <form action="index.html" method="post" onsubmit="return cheak_dl()">
+        <form action="index.html" method="post" onsubmit="return check_dl()">
           <div id="close1"></div>
           <label for="name">用户名：</label>
           <input type="text" id="name" placeholder="请输入用户名" />

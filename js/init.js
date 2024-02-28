@@ -44,6 +44,7 @@ window.onload = function () {
     com_btn.setAttribute("onclick", "post_com()");
 
     com_img.innerHTML = "";
+    com_img.style.zIndex = -1;
 
     com_radio.style.left = "340px";
 

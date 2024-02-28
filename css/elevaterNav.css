@@ -1,0 +1,64 @@
+/* 页面滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+.elevaterNav {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: -80px;
+  top: 60px;
+  background-color: #fff;
+  width: 60px;
+  height: 360px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: top 0.8s, opacity 0.5s, visibility 0.5s;
+}
+
+.elevaterNav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 360px;
+  justify-content: space-between;
+}
+
+.elevaterNav li {
+  width: 60px;
+  padding: 5px 0;
+  border-bottom: 1px #ccc solid;
+  cursor: pointer;
+}
+.elevaterNav li:nth-of-type(1) {
+  position: relative;
+  padding-top: 20px;
+}
+.elevaterNav li:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+.elevaterNav i {
+  display: block;
+  margin: 0 auto;
+  font-style: normal;
+  width: 42px;
+  text-align: center;
+}
+
+.elevaterNav .angle {
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  width: 10px;
+  height: 10px;
+  border-left: 1px #ccc solid;
+  border-top: 1px #ccc solid;
+  transform: rotate(0.12turn);
+}
+
+.elevaterNav .eleText-orange {
+  color: #c7902b;
+}
