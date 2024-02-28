@@ -29,3 +29,15 @@ Beginners can refer to:
 3.  Commit your code
 4.  Create Pull Request
 
+#### Update log
+
+2024.2.28:
+
+Major updates:
+
+1. Add elevator navigation
+
+Fix bug:
+
+1. Login registration function name error (severe)
+2. Comment area layer error
